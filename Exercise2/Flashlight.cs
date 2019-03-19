@@ -9,27 +9,31 @@ namespace Exercise2
 {
     public class Flashlight
     {
-        public On _on;
-        public Off _off;
+        private FlashlightState _currState;
+
+        public Flashlight()
+        {
+            _currState = new Off();
+        }
 
         public void Power()
         {
-
+            _currState.handlePower(this);
         }
 
         public void LightOn()
         {
-
+            Console.WriteLine("Turning on");
         }
 
         public void LightOff()
         {
-
+            Console.WriteLine("Turning off");
         }
 
         public void SetState(FlashlightState state)
         {
-
+            _currState = state;
         }
     }
 }

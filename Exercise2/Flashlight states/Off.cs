@@ -8,9 +8,10 @@ namespace Exercise2.Flashlight_states
 {
     public class Off : FlashlightState
     {
-        public void handlePower(Flashlight context)
+        public override void handlePower(Flashlight context)
         {
-            
+            context.SetState(new On());
+            context.LightOn();
         }
     }
 }
