@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Exercise1
 {
-    class Program
+    class testbench
     {
         static void Main(string[] args)
         {
+            Flashlight test = new Flashlight();
+            test.pressPower();
+            test.pressPower();
         }
     }
 }
