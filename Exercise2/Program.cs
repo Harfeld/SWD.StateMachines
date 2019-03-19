@@ -10,6 +10,9 @@ namespace Exercise2
     {
         static void Main(string[] args)
         {
+            Flashlight test = new Flashlight();
+            test.Power();
+            test.Power();
         }
     }
 }
